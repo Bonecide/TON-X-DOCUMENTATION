@@ -26,8 +26,8 @@ const connector = new TonhubConnector({ network: 'sandbox'});
 
 ```javascript
 let session = await connector.createNewSession({
-    name: 'Your app name',
-    url: 'Your app url'
+    name: 'Your app name', 'Tonhub для основной сети и Sandbox для тестовой'
+    url: 'Your app url' 'https://tonhub.com/ для основной и https://test.tonhub.com/ для тестовой'
 });
 // в session.link содержится ссылка для подключения аккаунта которую можно запихнуть в QR код 
 const sessionId = session.id;
